@@ -1,0 +1,30 @@
+<html>
+<head>
+
+
+<body>
+<div id="main">
+
+<?php
+
+$valor=$_POST["nombre"];
+
+
+
+
+echo "holaa" . htmlspecialchars($valor) . '!';
+
+$DemoCollectorObj = new DemoCollector();
+
+$DemoCollectorObj->createDemo($valor);
+
+echo "valor agreagado" </br>
+
+?>
+
+<div> <a href="index.php">Volver Inicio </a> </div>
+
+</div>
+
+</body>
+</html>
